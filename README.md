@@ -47,5 +47,6 @@ Before using this code, make sure you have the following installed:
 4. Run the autonomous exploration node:
 
     ```bash
-    rosrun <name of your ros package that contains the autonomous exploration> AutonomousExploration.py
+    rosrun <package_name> AutonomousExploration.py
     ```
+    here you must replace <package_name> with the name of your ros package that contains the autonomous exploration 
