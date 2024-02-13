@@ -49,13 +49,3 @@ Before using this code, make sure you have the following installed:
     ```bash
     rosrun <name of your ros package that contains the autonomous exploration> AutonomousExploration.py
     ```
-
-## Customization
-
-To integrate this code into your specific ROS package, follow these steps:
-
-1. Copy the contents of the `autonomous_exploration` folder into your ROS package.
-
-2. Make necessary modifications in your package's configuration files to include the exploration functionalities.
-
-3. Update your package's dependencies in the `CMakeLists.txt` and `package.xml` files.
