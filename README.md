@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains code for autonomous exploration based on random points using ROS (Robot Operating System). The purpose of this project is to enable robots to explore unknown environments efficiently by generating random points for exploration.
+This repository contains python code for a random point based autonomous exploration using ROS (Robot Operating System). The purpose of this project is to enable the Turtlebot3 to explore unknown environments autonomously by generating random goals for the robot to reach them.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ Before using this code, make sure you have the following installed:
 
 - ROS (Robot Operating System)
 - TurtleBot Navigation and SLAM packages
-- you can find all turtlebot packages, including the navigation and SLAM ones here: https://github.com/ROBOTIS-GIT/turtlebot3
+- you can find all turtlebot packages, including the navigation and SLAM ones in the robotis github: https://github.com/ROBOTIS-GIT/turtlebot3
 
 ## Installation
 
@@ -29,22 +29,25 @@ Before using this code, make sure you have the following installed:
 
 ## Usage
 
-1. Launch the TurtleBot:
+1. Connect to the turtlebot3 via ssh (the full guide for connecting to the turtlebot3 can be found in the section 3 Quick start guide of this robotis page: https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) 
+
+
+2. Launch the bring-up in the turtlebot3 console:
 
     ```bash
-    roslaunch turtlebot_bringup minimal.launch
+    roslaunch turtlebot3_bringup turtlebot3_robot.launch
     ```
 
-2. Launch the SLAM node:
+3. Launch SLAM in your pc:
 
     ```bash
-    roslaunch turtlebot_navigation gmapping_demo.launch
+    roslaunch turtlebot3_slam turtlebot3_slam.launch
     ```
 
-3. Launch the autonomous exploration node:
+4. Run the autonomous exploration node:
 
     ```bash
-    roslaunch autonomous_exploration explore.launch
+    rosrun <name of your ros package that contains the autonomous exploration> AutonomousExploration.py
     ```
 
 ## Customization
@@ -56,11 +59,3 @@ To integrate this code into your specific ROS package, follow these steps:
 2. Make necessary modifications in your package's configuration files to include the exploration functionalities.
 
 3. Update your package's dependencies in the `CMakeLists.txt` and `package.xml` files.
-
-## Contributing
-
-Feel free to contribute to this project by opening issues or pull requests. Your feedback and improvements are highly appreciated!
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
