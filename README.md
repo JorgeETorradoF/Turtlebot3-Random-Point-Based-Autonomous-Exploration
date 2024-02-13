@@ -29,7 +29,7 @@ Before using this code, make sure you have the following installed:
 
 ## Usage
 
-1. Connect to the turtlebot3 via ssh (the full guide for connecting to the turtlebot3 can be found in the section 3 Quick start guide of this robotis page: https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) 
+1. Connect to the turtlebot3 via ssh (the full guide for configuring the bashrc files on turtlebot and pc and also connecting to the turtlebot3 can be found in the section 3 Quick start guide of this robotis page: https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) 
 
 
 2. Launch the bring-up in the turtlebot3 console:
